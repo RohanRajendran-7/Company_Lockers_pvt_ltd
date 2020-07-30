@@ -74,13 +74,11 @@ public class Operations {
 
 
 	
-	
-	
 	public void execute() {
 		boolean ans = true;
 		boolean flag=false;
 		while(ans) {
-		System.out.println("Enter Your choice: \n 1. Add File \n 2. Delete File \n 3. Search File \n 4. Go to main menu");
+		System.out.println("\nEnter Your choice: \n 1. Add File \n 2. Delete File \n 3. Search File \n 4. Go to main menu");
 		String FileName;
 		inputCheck.inp();
 		switch(inputCheck.x) {
@@ -131,7 +129,7 @@ public class Operations {
 			throw new FNF_Exception("File Not Found");
 		}
 		catch(FNF_Exception e) {
-			System.out.println(e.getStackTrace());
+			System.out.println(e.getMessage());
 		}
 	}
 	public void SearchFile(String Name) {
@@ -142,7 +140,7 @@ public class Operations {
 					num =true;
 			}
 			if(num) {
-				System.out.println(Name + "is found at" +arr.indexOf(Name));
+				System.out.println(Name + "is found at : " +arr.indexOf(Name));
 			}
 			else 
 				throw new FNF_Exception("File Not Found");

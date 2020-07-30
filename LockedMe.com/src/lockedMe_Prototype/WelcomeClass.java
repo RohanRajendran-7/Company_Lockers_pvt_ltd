@@ -18,7 +18,7 @@ public class WelcomeClass {
 	public static void welcome() {
 		boolean cond = true;
 		while(cond) {
-		System.out.println("Enter Your Choice :");
+		System.out.println("\nEnter Your Choice :");
 		System.out.println("1. View List");
 		System.out.println("2. Business Operations");
 		System.out.println("3. Exit");
